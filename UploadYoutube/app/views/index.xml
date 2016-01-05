@@ -1,0 +1,20 @@
+<Alloy>
+	<Window class="container" backgroundColor="white">
+		<View id="titleView"  backgroundColor="#576996" top = "0%" width="100%" height="10%">
+			<Label id="labelTitle" Color="white" top = "30%" height="40%" width="100%" textAlign="center"> Upload video to Youtube </Label>
+		</View>
+		<View id="mainView" visible=true backgroundColor="white" top = "10%" width="100%" height="90%">
+			<View id="selectView" visible=true backgroundColor="white" top = "0%" width="100%" height="30%">
+				<Label id="labelSelect" Color="#576996" top = "20%" height="30%" width="100%" textAlign="center">Select video to Upload !</Label>
+				<Button id="buttonSelect"  backgroundColor="#576996" top = "60%" height="30%"  left="20%" width="60%"  borderRadius="10" title="Select Video" textAlign="center" tintColor="white" onClick="doSelectVideo"></Button>
+		    </View>
+			<View id="progView" visible=true backgroundColor="white" top = "30%" width="100%" height="30%">
+				<ProgressBar id="uploadProg" visible="true" message="Upload Progress" min="0" max="1" value="0"  Color="#576996" top = "10%" height="80%" left="10%" width="80%"></ProgressBar>
+		    </View>
+			<View id="uploadView" visible=true backgroundColor="white" top = "60%" width="100%" height="30%">
+				<Label id="labelUpload" Color="#576996" top = "20%" height="30%" width="100%" textAlign="center">No selected vedeo !</Label>
+				<Button id="buttonUpload"  backgroundColor="#576996" top = "60%" height="30%"  left="20%" width="60%"  borderRadius="10" title="Upload Video" textAlign="center" tintColor="white" onClick="doUploadVideo"></Button>
+		    </View>
+	    </View>
+	</Window>
+</Alloy>
